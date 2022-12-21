@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEMWell</title>
+
+    </head>
+    <body>
+        <form action="/" method = "post">
+            <fieldset>
+                <legend>Patient Of Information</legend>
+                <p><label>Name: </label>
+                    <input  type="text" name="fName" ></p>
+               
+                <p><label>Age: </label>
+                    <input  type="Number" name="Age" ></p>
+                <p>
+                    Gender :
+                    <label><input type="radio" name="gender" value="male"/>
+                        Male</label>
+                    <label><input type="radio" name="gender" value="female"/>
+                        Female</label>
+                </p>
+
+                <p><label>Weight: </label>
+                    <input  type="Number" name="weight" ></p>
+                <br>
+                <p>
+                    <label>
+                        <b>
+                            Risk Factors</b>
+                    </label><br><br>
+                    <p><label>Pregnancy: </label>
+                        <div class="form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="Pregnancy"
+                                id="exampleRadios1"
+                                value="yes"
+                                >
+                            <label class="form-check-label" for="exampleRadios1">
+                                YES
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="Pregnancy"
+                                id="exampleRadios1"
+                                value="no"
+                                >
+                            <label class="form-check-label" for="exampleRadios1">
+                                No
+                            </label>
+                        </div></p>
+                    <label>If YES , Enter the stage: </label>
+                    <input  type="text" name="Stage" >
+                    <br>
+                    <label>
+                        Smoking</label>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Smoking"
+                            id="exampleRadios1"
+                            value="yes"
+                            >
+                        <label class="form-check-label" for="exampleRadios1">
+                            YES
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Smoking"
+                            id="exampleRadios2"
+                            value="no">
+                        <label class="form-check-label" for="exampleRadios2">
+                            NO
+                        </label>
+                    </div>
+                    <p><label>If YES  and stopped, enter the Approximate Date of cessation:</label>
+                        <input  type="Date" name="StoppedDate" ></p>
+                    
+                    <p><label>
+                        Alcohol Use</label>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Alcohol"
+                            id="exampleRadios1"
+                            value="yes"
+                            >
+                        <label class="form-check-label" for="exampleRadios1">
+                            YES
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Alcohol"
+                            id="exampleRadios2"
+                            value="no">
+                        <label class="form-check-label" for="exampleRadios2">
+                            NO
+                        </label>
+                    </div></p>
+                    <p><label>If YES  , enter the Frequency:</label>
+                        <input  type="number" name="frequency" ></p>
+
+                    <p><label>
+                        Drug Allergy: </label>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Allergy"
+                            id="exampleRadios1"
+                            value="yes"
+                            >
+                        <label class="form-check-label" for="exampleRadios1">
+                            YES
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="Allergy"
+                            id="exampleRadios2"
+                            value="no">
+                        <label class="form-check-label" for="exampleRadios2">
+                            NO
+                        </label>
+                    </div></p>
+                    <p><label>If YES , enter the allery:</label>
+                        <input  type="text" name="AllergyName" ></p>
+                </p>
+
+                <label>
+                    <b>Concurrent Medical conditions [Includes ongoing illness]</b>
+                </label><br><br>
+                <label for="Input">
+                    Name of Medical Condition:
+                </label>
+                <input id="Con" type="text" name="ConditionName">
+                <br><br>
+                <label>
+                    Diagnosis Date:
+                </label>
+                <input type="date" name="ApproxDateForMedicalCondition" value="">
+                <br><br>
+                <label>Treatment Medication:
+                </label>
+                <input type="textarea" name="MedicationName" value="">
+                <br><br>
+                <label>
+                    <b>
+                        Past Medical Conditions</b>
+                </label><br><br>
+                <label for="Input">
+                    Name of Medical Condition:
+                </label>
+                <input id="Con" type="text" name="MedicalName">
+                <br><br>
+                <label>
+                    Diagnosis Start Date:
+                </label>
+                <input type="date" name="ApproxStartDateForPastMedicalCondition" value="">
+                <br><br>
+                <label>
+                    Stop Date:
+                </label>
+                <input type="date" name="ApproxEndDateForPastMedicalCondition" value="">
+                <br><br>
+            
+                <label for="Input">
+                    Name of Medical Product:
+                </label>
+                <input id="Con" type="text" name="NameOfMedicalProduct">
+                <br>
+                <p></p>
+                <label for="Input">
+                    Frequency:
+                </label>
+                <input id="Con" type="text" name="frequencyForMedicine">
+                <br><br>
+                <label for="Input">
+                    Usage Recommendations (If any):
+                </label>
+                <input id="Con" type="text" name="UseageRecomendations">
+                <br>
+                <br>
+                <button type="Submit">Submit</button>
+
+            </fieldset>
+        </form>
+        <script src="app.js" charset="utf-8"></script>
+        
+    </body>
+</html>
